@@ -7,14 +7,13 @@
 <table>
   <tr>
     <td width="50%">
-      <a href="https://github.com/DanielScabeni/DAW-2022">
+      <a href="https://github.com/DanielScabeni/PRM-2023">
         <img src="https://github-readme-stats.vercel.app/api/pin/?username=DanielScabeni&repo=DAW-2022&theme=chartreuse-dark" alt="Readme Card">
       </a>
     </td>
     <td width="50%">
   </a>
-    <p style="color: white;">Workspace da Disciplina de Programação (2023) do curso de Sistemas de Informações da Universidade MaterDei (UNIMATER), ministrada pelo professor Liborio Jr.</p>
-    <p style="color: white;">Projetos desenvolvidos em sala e em conjunto com o professor, utilizando as seguintes linguagens.</p>
+    <p style="color: white;">O projeto de frontend foi elaborado em ambiente acadêmico, especificamente durante as aulas da disciplina de Programação, pertencente ao curso de Sistemas de Informação do Centro Universitário Materdei - UNIMATER, no ano de 2023. A proposta desse projeto se inicia com a revisão dos fundamentos relativos à criação de componentes utilizando a biblioteca React. Ao longo do desenvolvimento, o projeto avança progressivamente na aplicação prática da metodologia de programação. Isso proporciona aos alunos a oportunidade de aplicar todos os conceitos que são abordados no plano de estudos da disciplina.</p>
     </td>
   </tr>
 </table>
