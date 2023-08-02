@@ -8,6 +8,7 @@
   <tr>
     <td width="50%">
       <a href="https://github.com/DanielScabeni/PRM-2023">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=DanielScabeni&repo=PRM-2023&theme=chartreuse-dark" alt="Readme Card">
         <img src="https://github-readme-stats.vercel.app/api/pin/?username=DanielScabeni&repo=DAW-2022&theme=chartreuse-dark" alt="Readme Card">
       </a>
     </td>
