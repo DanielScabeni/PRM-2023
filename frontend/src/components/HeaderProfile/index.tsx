@@ -20,12 +20,12 @@ function HeaderProfile( {
     return(
         <Box id="header-profile">
             <Box className="header-profile-background">
-                <img src={banner} className="header-profile-detail-avatar" />
+                <img src={banner} />
             </Box>
 
             <Box className="header-profile-detail">
                 <Avatar alt={ user.fullname } style={{width: 128, height: 128}} 
-                src={avatar} className="header-profile-detail-avatar" />
+                        src={avatar} className="header-profile-detail-avatar" />
 
                 <Box className="header-profile-detail-text">
                     <Typography variant="h5" >
@@ -42,9 +42,9 @@ function HeaderProfile( {
 
                     <Typography variant="caption">
                         <CalendarMonthOutlined />
-                        <IntlProvider locale="pr-BR">
-                            Entrou em <FormattedDate value={ user.createdAt } month="long" year="">
-                        <IntlProvider/>
+                        <IntlProvider locale="pt-BR">
+                            Entrou em <FormattedDate value={ user.createdAt } month="long" year="numeric" />
+                        </IntlProvider>
                     </Typography>
                 </Box>
             </Box>
