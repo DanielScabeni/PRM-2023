@@ -4,21 +4,22 @@ import { CalendarMonthOutlined } from "@mui/icons-material";
 import { IntlProvider, FormattedDate } from 'react-intl';
 
 //imagens
-import banner from '../../assets/img/profile_banner.png'
-import avatar from '../../assets/img/profile_avatar.jpg'
+import banner from '../../assets/img/profile_banner.png';
+import avatar from '../../assets/img/profile_avatar.jpg';
 
 //estilo
-import './style.css';
+import './style.css'
 
 type HeaderProfileProps = {
     user: any
 }
 
-function HeaderProfile( {
+function HeaderProfile({
     user
-} : HeaderProfileProps) {
-    return(
+}: HeaderProfileProps) {
+    return (
         <Box id="header-profile">
+
             <Box className="header-profile-background">
                 <img src={banner} />
             </Box>
@@ -28,15 +29,15 @@ function HeaderProfile( {
                         src={avatar} className="header-profile-detail-avatar" />
 
                 <Box className="header-profile-detail-text">
-                    <Typography variant="h5" >
+                    <Typography variant="h5">
                         { user.fullname }
                     </Typography>
 
-                    <Typography variant="subtitle1" component="h6" >
-                        { user.username }
+                    <Typography variant="subtitle1" component="h6">
+                        @{ user.username }
                     </Typography>
 
-                    <Typography variant="subtitle1" component="p" >
+                    <Typography variant="subtitle1" component="p">
                         { user.description }
                     </Typography>
 
@@ -45,9 +46,11 @@ function HeaderProfile( {
                         <IntlProvider locale="pt-BR">
                             Entrou em <FormattedDate value={ user.createdAt } month="long" year="numeric" />
                         </IntlProvider>
+
                     </Typography>
                 </Box>
             </Box>
+
         </Box>
     )
 }

@@ -4,8 +4,7 @@
     gap: 0.5rem;
     align-items: center;
 }
-
-.card-header-text {
+#topic-card-header .card-header-text {
     display: flex;
     align-items: baseline;
     flex-direction: row;

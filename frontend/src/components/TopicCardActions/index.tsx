@@ -1,6 +1,8 @@
 import { Button } from "@mui/material";
 import { ChatBubble, FavoriteBorder, Repeat } from "@mui/icons-material";
 
+import './style.css';
+
 function TopicCardActions(){
     return(
         <div id="topic-card-actions">
