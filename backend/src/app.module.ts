@@ -7,6 +7,9 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserController } from './controllers/user.controller';
 import { UserService } from './services/user.service';
 import { User } from './entities/user.entity';
+import { TopicController } from './controllers/topic.controller';
+import { TopicService } from './services/topic.service';
+import { Topic } from './entities/topic.entity';
 
 @Module({
   imports: [
@@ -17,11 +20,11 @@ import { User } from './entities/user.entity';
       username: 'root',
       password: '#User-0147',
       database: 'prm_2023',
-      entities: [User]
+      entities: [User, Topic]
     }),
-    TypeOrmModule.forFeature([User])
+    TypeOrmModule.forFeature([User, Topic])
   ],
-  controllers: [AppController, ProfileController, UserController],
-  providers: [AppService, ProfileService, UserService],
+  controllers: [AppController, ProfileController, UserController, TopicController],
+  providers: [AppService, ProfileService, UserService, TopicService],
 })
 export class AppModule {}
