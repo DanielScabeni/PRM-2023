@@ -20,7 +20,8 @@ import { Topic } from './entities/topic.entity';
       username: 'root',
       password: '#User-0147',
       database: 'prm_2023',
-      entities: [User, Topic]
+      synchronize: true,
+      entities: [User, Topic],
     }),
     TypeOrmModule.forFeature([User, Topic])
   ],
