@@ -9,11 +9,11 @@ export class AuthService {
 
     constructor(
         @InjectRepository(User)
-        private readonly Repository: Repository<User>
+        private readonly repository: Repository<User>
     ){}
 
     async validateCredential(username: string, password: string): Promise<User> {
-        const found: User = await this.Repository.findOneBy({username: username});
+        const found: User = await this.repository.findOneBy({username: username});
 
         if (!found) {
             throw new ApplicationException('Invalid user', 401)

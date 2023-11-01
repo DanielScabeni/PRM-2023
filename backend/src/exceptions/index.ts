@@ -7,6 +7,5 @@ export class ApplicationException extends Error {
         this.statusCode = statusCode;
         this.message = message;
         Object.setPrototypeOf(this, ApplicationException.prototype)
-
     }
 }

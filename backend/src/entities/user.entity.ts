@@ -2,18 +2,17 @@ import { Exclude } from "class-transformer";
 import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
 
 @Entity()
-
 export class User {
     @PrimaryGeneratedColumn()
     id: number;
-
-    @Column({nullable: false, length: 50})
-    fullname: string;
     
     @Column({nullable: false, length: 20})
     username: string;
     
-    @Column({nullable: true, length: 250})
+    @Column({nullable: false, length: 50})
+    fullname: string;
+
+    @Column({length: 250})
     description: string;
 
     @Exclude()
