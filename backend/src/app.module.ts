@@ -13,7 +13,7 @@ import { CommentModule } from './comments/comment.module';
   imports: [
     JwtModule.register({
       global: true,
-      secret: 'materdei',
+      secret: 'adminadmin',
       signOptions: {expiresIn: '24h'} 
     }),
     TypeOrmModule.forRoot({
