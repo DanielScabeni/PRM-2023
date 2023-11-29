@@ -8,6 +8,7 @@ import { createTopic, getProfileByUsername, getTopicsByUsername } from "../../se
 import { ITopic, IUser } from "../../@types"
 import AddIcon from '@mui/icons-material/Add';
 import { LoadingButton } from "@mui/lab"
+import { useTopic } from "../../hook/useTopic"
 
 function TopicPage() {
 
@@ -18,12 +19,13 @@ function TopicPage() {
 
     //STATE
     const [messageError, setMessageError] = useState('');
-const [messageSuccess, setMessageSuccess] = useState('');
+    const [messageSuccess, setMessageSuccess] = useState('');
     const [loading, setLoading] = useState(false);
 
 
     //TOPICS
-    const [topics, setTopics] = useState<ITopic[]>([]);
+    const {topics, setTopics} = useTopic();
+    // const [topics, setTopics] = useState<ITopic[]>([]);
     const [profileTopics, setProfileTopics] = useState<ITopic[]>([]);
 
     //TABS
@@ -104,7 +106,7 @@ return getTopicsByUsername(username)
                 
             <HeaderProfile user={profile} />
 
-<Box className="topic-page-content" style={{width: '64rem'}}>
+    	    <Box className="topic-page-content" style={{width: '64rem'}}>
                 
                 {profile.id == user?.id && (
                     <Tabs value={tab} onChange={handleTabChange}>
